@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SipIt.types;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,5 +12,6 @@ namespace SipIt.customers.Services
         Task DeleteAsync(Customer customer);
 
         Task UpdateAsync(Customer customer);
+        IEnumerable<Customer> GetCustomers();
     }
 }

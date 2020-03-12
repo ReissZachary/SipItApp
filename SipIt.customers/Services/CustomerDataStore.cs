@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SipIt.types;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -89,17 +90,24 @@ namespace SipIt.customers.Services
         {
             using (FileStream fs = File.Create(fileName))
             {
-                await JsonSerializer.SerializeAsync(fs, customers);
+                await JsonSerializer.SerializeAsync(fs, customers.Values);
             }
         }
 
         private async Task<ConcurrentDictionary<int, Customer>> deserializeCustomersAsync()
         {
+            customers = new ConcurrentDictionary<int, Customer>();
             using (FileStream fs = File.OpenRead(fileName))
             {
-                customers = await JsonSerializer.DeserializeAsync<ConcurrentDictionary<int, Customer>>(fs);
+                foreach (var customer in await JsonSerializer.DeserializeAsync<List<Customer>>(fs))
+                    customers.TryAdd(customer.Id, customer);
             }
             return customers;
+        }
+
+        public IEnumerable<Customer> GetCustomers()
+        {
+            return customers.Values;
         }
     }
 }

@@ -7,15 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.api", "SipIt.api\SipI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.orders", "SipIt.orders\SipIt.orders.csproj", "{75D1D888-85AE-43E6-9D5F-D1CFA75E2C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.waitingLine", "SipIt.waitingLine\SipIt.waitingLine.csproj", "{88BC8022-7A76-48DB-AF22-BB9085B68B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.waitingLine", "SipIt.waitingLine\SipIt.waitingLine.csproj", "{88BC8022-7A76-48DB-AF22-BB9085B68B19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.notifications", "SipIt.notifications\SipIt.notifications.csproj", "{ECBB796B-E2DC-44E5-8D01-B82C6DE97A45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.notifications", "SipIt.notifications\SipIt.notifications.csproj", "{ECBB796B-E2DC-44E5-8D01-B82C6DE97A45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.promotions", "SipIt.promotions\SipIt.promotions.csproj", "{17C22586-C2D6-4A56-BF4F-4455D7A3B93F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.promotions", "SipIt.promotions\SipIt.promotions.csproj", "{17C22586-C2D6-4A56-BF4F-4455D7A3B93F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.recommendation", "SipIt.recommendation\SipIt.recommendation.csproj", "{C4857D3E-5E8F-4E6E-A085-271D81622D96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.recommendation", "SipIt.recommendation\SipIt.recommendation.csproj", "{C4857D3E-5E8F-4E6E-A085-271D81622D96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.customers", "SipIt.customers\SipIt.customers.csproj", "{0ADFD1BC-8F52-4E82-8C4C-99A2B131529D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.customers", "SipIt.customers\SipIt.customers.csproj", "{0ADFD1BC-8F52-4E82-8C4C-99A2B131529D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8F5829E6-09D7-45DD-A5FB-6BBF11C1C88B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.types", "SipIt.types\SipIt.types.csproj", "{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{0ADFD1BC-8F52-4E82-8C4C-99A2B131529D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADFD1BC-8F52-4E82-8C4C-99A2B131529D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADFD1BC-8F52-4E82-8C4C-99A2B131529D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5829E6-09D7-45DD-A5FB-6BBF11C1C88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5829E6-09D7-45DD-A5FB-6BBF11C1C88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5829E6-09D7-45DD-A5FB-6BBF11C1C88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5829E6-09D7-45DD-A5FB-6BBF11C1C88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
