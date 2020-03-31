@@ -1,4 +1,5 @@
-﻿using SipIt.types;
+﻿using SipIt.customers.Controllers;
+using SipIt.types;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,19 +9,18 @@ namespace SipIt.api.Services
 {
     public class CustomerService : ICustomerService
     {
-        public CustomerService()
-        {
+        private readonly CustomerController customerController;
 
+        public CustomerService(CustomerController customerController)
+        {
+            this.customerController = customerController ?? throw new ArgumentNullException(nameof(customerController));
         }
 
         public void AddCustomer(Customer customer)
         {
-            //call to customer api
+            customerController.AddCustomer(customer);
         }
 
-        public IEnumerable<Customer> GetAllCustomers()
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<Customer> GetAllCustomers() => customerController.GetCustomers();        
     }
 }

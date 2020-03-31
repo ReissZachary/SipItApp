@@ -3,6 +3,33 @@ version: '3.4'
 services:
   sipit.api:
     image: ${DOCKER_REGISTRY-}sipitapi
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
     build:
       context: .
       dockerfile: SipIt.api/Dockerfile
+    networks: 
+      sipitnet:
+        aliases:
+          - sipitapi
+    ports: 
+      - "5005:80"
+
+  sipit.customers:
+    image: ${DOCKER_REGISTRY-}sipitcustomers
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    build:
+      context: .
+      dockerfile: SipIt.customers/Dockerfile
+    networks: 
+      sipitnet:
+        aliases:
+          - sipitcustomers
+    ports: 
+      - "5006:80"
+
+  networks: 
+    sipitnet:
+      driver: bridge
+  

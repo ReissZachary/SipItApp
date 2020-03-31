@@ -20,7 +20,7 @@ namespace SipIt.customers.Controllers
         }
         public void AddCustomer(Customer customer)
         {
-            //call data store add customer..
+            dataStore.AddAsync(customer);
         }
 
         [HttpGet]
