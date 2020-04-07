@@ -11,7 +11,7 @@ namespace SipIt.api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GatewayCustomerController
+    public class GatewayCustomerController : ControllerBase
     {
         private readonly CustomerService customerService;
 

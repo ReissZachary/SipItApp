@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SipIt.api.Services;
+using SipIt.customers.Services;
+using SipIt.menu.Services;
 
 namespace SipIt.api
 {
@@ -26,6 +29,9 @@ namespace SipIt.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IMenuItems, MenuItems>();
+            services.AddSingleton<ICustomerDataStore, CustomerDataStore>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

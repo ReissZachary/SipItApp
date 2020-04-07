@@ -29,6 +29,20 @@ services:
     ports: 
       - "5006:80"
 
+  sipit.menu:
+    image: ${DOCKER_REGISTRY-}sipitmenu
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    build:
+      context: .
+      dockerfile: SipIt.menu/Dockerfile
+    networks:
+      sipitnet:
+        aliases:
+          - sipitmenu
+    ports:
+      - "5007:80"
+
   networks: 
     sipitnet:
       driver: bridge

@@ -21,6 +21,8 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.types", "SipIt.types\SipIt.types.csproj", "{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.menu", "..\SipIt.menu\SipIt.menu.csproj", "{524124DD-F10F-4AE9-87E6-3D82183F12FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

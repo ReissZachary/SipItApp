@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SipIt.menu\SipIt.menu.csproj" />
     <ProjectReference Include="..\SipIt.customers\SipIt.customers.csproj" />
     <ProjectReference Include="..\SipIt.types\SipIt.types.csproj" />
   </ItemGroup>
