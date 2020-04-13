@@ -21,7 +21,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.types", "SipIt.types\SipIt.types.csproj", "{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipIt.menu", "..\SipIt.menu\SipIt.menu.csproj", "{524124DD-F10F-4AE9-87E6-3D82183F12FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.menu", "..\SipIt.menu\SipIt.menu.csproj", "{524124DD-F10F-4AE9-87E6-3D82183F12FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96E7448C-3FCB-484E-A89B-E67832D9127F}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		..\TinkerJems\heroku.yml = ..\TinkerJems\heroku.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

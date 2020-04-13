@@ -8,7 +8,8 @@ namespace SipIt.orders.Services
 {
     public interface ICustomerOrders
     {
-        IEnumerable<Order> GetCustomerOrdersAsync(int customerId);
-        Task<Order> GetOrdersAsync();
+        Task<int> AddOrderAsync(Order order);
+        Task<IEnumerable<Order>> GetCustomerOrdersAsync(int customerId);
+        Task<IEnumerable<Order>> GetAllOrdersAsync();
     }
 }
