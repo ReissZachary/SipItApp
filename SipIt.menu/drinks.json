@@ -1,0 +1,81 @@
+[
+
+  {
+    "Id": 1,
+    "Category": "Dr. Pepper",
+    "Name": "Dirty Dr.Pepper",
+    "Additions": [ "Coconut", "cream" ]
+  },
+  {
+    "Id": 2,
+    "Category": "Sprite",
+    "Name": "Sun kiss",
+    "Additions": [ "Coconut", "cream" ]
+  },
+  {
+    "Id": 3,
+    "Category": "Mt.Dew",
+    "Name": "The Skunk",
+    "Additions": [ "Blue Coconut" ]
+  },
+  {
+    "Id": 4,
+    "Category": "Root Beer",
+    "Name": "Brown Cow",
+    "Additions": [ "Coconut", "cream" ]
+  },
+  {
+    "Id": 5,
+    "Category": "Mtn Dew",
+    "Name": "Kinkin' Rickey",
+    "Additions": [ "Coconut", "Lime" ]
+  },
+  {
+    "Id": 6,
+    "Category": "Mtn Dew",
+    "Name": "Maui Breeze",
+    "Additions": [ "Coconut", "Peach" ]
+  },
+  {
+    "Id": 7,
+    "Category": "Mtn Dew",
+    "Name": "Tropical Chaos",
+    "Additions": [ "Kiwi", "Strawberry" ]
+  },
+  {
+    "Id": 8,
+    "Category": "Mtn Dew",
+    "Name": "The Charmer",
+    "Additions": [ "Mango", "Peach", "Pineapple", "Blue Curacoa" ]
+  },
+  {
+    "Id": 9,
+    "Category": "Mtn Dew",
+    "Name": "Perky Turkey",
+    "Additions": [ "Kiwi", "Pineapple", "Lime" ]
+  },
+  {
+    "Id": 10,
+    "Category": "Mtn Dew",
+    "Name": "Dark Moon",
+    "Additions": [ "Huckleberry", "Clue Curacoa", "Energy Shot" ]
+  },
+  {
+    "Id": 11,
+    "Category": "Mtn Dew",
+    "Name": "Jazzy Jewel",
+    "Additions": [ "Blue Coconut", "Blue Raspberry", "Lime" ]
+  },
+  {
+    "Id": 12,
+    "Category": "Mtn Dew",
+    "Name": "Dawn on Me",
+    "Additions": [ "Peach", "Strawberry" ]
+  },
+  {
+    "Id": 13,
+    "Category": "Mtn Dew",
+    "Name": "Key Lime Cutie",
+    "Additions": [ "Kiwi", "Lime", "Cream", "Graham Cracker" ]
+  }
+]

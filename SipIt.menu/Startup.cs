@@ -10,10 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Refit;
-using SipIt.api.Services;
+using SipIt.menu.Controllers;
+using SipIt.menu.Services;
 
-namespace SipIt.api
+namespace SipIt.menu
 {
     public class Startup
     {
@@ -27,13 +27,8 @@ namespace SipIt.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();            
-
-            var menuClient = RestService.For<IMenuService>(Configuration["MENU_SERVICE_URL"]);
-            services.AddSingleton(menuClient);
-
-            var customerClient = RestService.For<ICustomerService>(Configuration["CUSTOMER_SERVICE_URL"]);
-            services.AddSingleton(customerClient);
+            services.AddControllers();
+            services.AddSingleton<IMenuItems, MenuItems>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

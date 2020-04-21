@@ -1,10 +1,12 @@
-version: '3.4'
+version: '3.5'
 
 services:
   sipit.api:
     image: ${DOCKER_REGISTRY-}sipitapi
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      - ASPNETCORE_ENVIRONMENT=Development
+      - CUSTOMER_SERVICE_URL=http://sipitcustomers
+      - MENU_SERVICE_URL=http://sipitmenu
     build:
       context: .
       dockerfile: SipIt.api/Dockerfile
@@ -18,7 +20,7 @@ services:
   sipit.customers:
     image: ${DOCKER_REGISTRY-}sipitcustomers
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      - ASPNETCORE_ENVIRONMENT=Development
     build:
       context: .
       dockerfile: SipIt.customers/Dockerfile
@@ -32,7 +34,7 @@ services:
   sipit.menu:
     image: ${DOCKER_REGISTRY-}sipitmenu
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      - ASPNETCORE_ENVIRONMENT=Development
     build:
       context: .
       dockerfile: SipIt.menu/Dockerfile
@@ -43,7 +45,7 @@ services:
     ports:
       - "5007:80"
 
-  networks: 
-    sipitnet:
-      driver: bridge
+networks: 
+  sipitnet:
+    name: sipitnet
   

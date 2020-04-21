@@ -1,4 +1,5 @@
-﻿using SipIt.types;
+﻿using Refit;
+using SipIt.types;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,10 @@ namespace SipIt.api.Services
 {
     public interface ICustomerService
     {
-        void AddCustomer(Customer customer);
-        IEnumerable<Customer> GetAllCustomers();
+        [Post("/customer")]
+        Task AddCustomerAsync(Customer customer);
+
+        [Get("/customer")]
+        Task<IEnumerable<Customer>> GetAllCustomersAsync();
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SipIt.api.Services;
-using SipIt.customers.Services;
 using SipIt.types;
 using System;
 using System.Collections.Generic;
@@ -13,20 +12,20 @@ namespace SipIt.api.Controllers
     [Route("[controller]")]
     public class GatewayCustomerController : ControllerBase
     {
-        private readonly CustomerService customerService;
+        private readonly ICustomerService customerService;
 
-        public GatewayCustomerController(CustomerService customerService)
+        public GatewayCustomerController(ICustomerService customerService)
         {
             this.customerService = customerService ?? throw new ArgumentNullException(nameof(customerService));
         }
 
         [HttpPost]
-        public void PostCustomer(Customer customer)
+        public async Task PostCustomer(Customer customer)
         {
-            customerService.AddCustomer(customer);
+            await customerService.AddCustomerAsync(customer);
         }
 
         [HttpGet]
-        public IEnumerable<Customer> GetCustomers() => customerService.GetAllCustomers();   
+        public async Task<IEnumerable<Customer>> GetCustomers() => await customerService.GetAllCustomersAsync();   
     }
 }

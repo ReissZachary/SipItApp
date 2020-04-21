@@ -7,17 +7,17 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
+COPY ["SipIt.api/SipIt.api.csproj", "SipIt.api/"]
 COPY ["SipIt.customers/SipIt.customers.csproj", "SipIt.customers/"]
-COPY ["SipIt.types/SipIt.types.csproj", "SipIt.types/"]
-RUN dotnet restore "SipIt.customers/SipIt.customers.csproj"
+RUN dotnet restore "SipIt.api/SipIt.api.csproj"
 COPY . .
-WORKDIR "/src/SipIt.customers"
-RUN dotnet build "SipIt.customers.csproj" -c Release -o /app/build
+WORKDIR "/src/SipIt.api"
+RUN dotnet build "SipIt.api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "SipIt.customers.csproj" -c Release -o /app/publish
+RUN dotnet publish "SipIt.api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SipIt.customers.dll"]
+ENTRYPOINT ["dotnet", "SipIt.api.dll"]

@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["SipIt.api/SipIt.api.csproj", "SipIt.api/"]
-COPY ["SipIt.customers/SipIt.customers.csproj", "SipIt.customers/"]
+COPY ["SipIt.types/SipIt.types.csproj", "SipIt.types/"]
 RUN dotnet restore "SipIt.api/SipIt.api.csproj"
 COPY . .
 WORKDIR "/src/SipIt.api"

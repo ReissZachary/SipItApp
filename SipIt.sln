@@ -21,13 +21,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.types", "SipIt.types\SipIt.types.csproj", "{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.menu", "..\SipIt.menu\SipIt.menu.csproj", "{524124DD-F10F-4AE9-87E6-3D82183F12FD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96E7448C-3FCB-484E-A89B-E67832D9127F}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile = Dockerfile
 		..\TinkerJems\heroku.yml = ..\TinkerJems\heroku.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.menu", "SipIt.menu\SipIt.menu.csproj", "{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D61C2E-8C6E-47BC-86F3-B20E2C7D4B9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{524124DD-F10F-4AE9-87E6-3D82183F12FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

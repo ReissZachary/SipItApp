@@ -12,15 +12,15 @@ namespace SipIt.api.Controllers
     [Route("[controller]")]
     public class GatewayMenuController
     {
-        private readonly MenuService menuService;
+        private readonly IMenuService menuService;
 
-        public GatewayMenuController(MenuService menuService)
+        public GatewayMenuController(IMenuService menuService)
         {
             this.menuService = menuService ?? throw new ArgumentNullException(nameof(menuService));
         }
 
         [HttpGet]
-        public IEnumerable<Drink> GetCustomers() => menuService.GetAllDrinks();
+        public IEnumerable<Drink> GetAllDrinks() => menuService.GetAllDrinks();
     }
 }
 

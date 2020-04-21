@@ -18,6 +18,8 @@ namespace SipIt.customers.Controllers
         {
             this.dataStore = dataStore ?? throw new ArgumentNullException(nameof(dataStore));
         }
+
+        [HttpPost]
         public void AddCustomer(Customer customer)
         {
             dataStore.AddAsync(customer);

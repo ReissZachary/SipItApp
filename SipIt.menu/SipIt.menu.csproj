@@ -2,14 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>1c29d08a-26e1-482a-968b-466bd38f6146</UserSecretsId>
+    <UserSecretsId>5888f639-875d-4a5f-b76e-af52d82a4564</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
-    <PackageReference Include="Refit" Version="5.1.67" />
   </ItemGroup>
 
   <ItemGroup>
