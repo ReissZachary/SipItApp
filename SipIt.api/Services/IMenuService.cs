@@ -11,6 +11,6 @@ namespace SipIt.api.Services
     public interface IMenuService
     {
         [Get("/menu")]
-        IEnumerable<Drink> GetAllDrinks();
+        Task<IEnumerable<Drink>> GetAllDrinksAsync();
     }
 }

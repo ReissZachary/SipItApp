@@ -20,7 +20,7 @@ namespace SipIt.api.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Drink> GetAllDrinks() => menuService.GetAllDrinks();
+        public async Task<IEnumerable<Drink>> GetAllDrinks() => await menuService.GetAllDrinksAsync();
     }
 }
 
