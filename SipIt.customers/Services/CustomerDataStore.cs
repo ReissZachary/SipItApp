@@ -25,8 +25,7 @@ namespace SipIt.customers.Services
             {
                 AddSeedData();
             }
-
-        }
+        }              
 
         private async void AddSeedData()
         {
@@ -59,7 +58,7 @@ namespace SipIt.customers.Services
 
         private async Task<int> doAddAsync(int timesTried, Customer customer)
         {
-            int newId = customers.Count;
+            int newId = customers.Count + 1;
             if(timesTried > RETRIES_ALLOWED)
             {
                 throw new RetrtiesExceededException("Unable to add customer");
@@ -67,6 +66,8 @@ namespace SipIt.customers.Services
             if (customers.TryAdd(newId, customer))
             {
                 customer.Id = newId;
+                customers.AddOrUpdate(customer.Id, customer, (_id, _existing) => customer);
+                //await serializeCustomersAsync(customers);
                 return await Task.FromResult(newId);
             }
             else

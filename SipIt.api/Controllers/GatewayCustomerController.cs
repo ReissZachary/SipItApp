@@ -20,10 +20,7 @@ namespace SipIt.api.Controllers
         }
 
         [HttpPost]
-        public async Task PostCustomer(Customer customer)
-        {
-            await customerService.AddCustomerAsync(customer);
-        }
+        public async Task PostCustomer(Customer customer) => await customerService.AddCustomerAsync(customer);
 
         [HttpGet]
         public async Task<IEnumerable<Customer>> GetCustomers() => await customerService.GetAllCustomersAsync();   
