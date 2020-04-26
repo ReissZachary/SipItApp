@@ -1,1 +1,1 @@
-﻿web: dotnet ./SipIt.customers
+﻿web: ASPNETCORE_URLS='http://+:$PORT' dotnet ./app.dll --urls http://+:$PORT
