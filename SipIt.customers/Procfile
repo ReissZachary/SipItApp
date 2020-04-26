@@ -1,1 +1,1 @@
-﻿web: SipIt.customers
+﻿web: dotnet ./SipIt.customers
