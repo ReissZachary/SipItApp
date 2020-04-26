@@ -13,7 +13,7 @@ namespace SipIt.waitingLine.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Weird", "Weirdy", "Werider"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
