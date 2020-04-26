@@ -24,7 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96E7448C-3FCB-484E-A89B-E67832D9127F}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile = Dockerfile
-		..\TinkerJems\heroku.yml = ..\TinkerJems\heroku.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SipIt.menu", "SipIt.menu\SipIt.menu.csproj", "{76A02D22-4E19-49D3-BC2C-2D412BBE50CC}"
