@@ -1,81 +1,440 @@
 [
-
   {
     "Id": 1,
-    "Category": "Dr. Pepper",
+    "Base": "Dr. Pepper",
     "Name": "Dirty Dr.Pepper",
-    "Additions": [ "Coconut", "cream" ]
+    "Additions": [ "Coconut" ]
   },
   {
     "Id": 2,
-    "Category": "Sprite",
-    "Name": "Sun kiss",
-    "Additions": [ "Coconut", "cream" ]
+    "Base": "Sprite",
+    "Name": "Cougar Juice",
+    "Additions": [ "Blue Coconut" ]
   },
   {
     "Id": 3,
-    "Category": "Mt.Dew",
+    "Base": "Mt.Dew",
     "Name": "The Skunk",
     "Additions": [ "Blue Coconut" ]
   },
   {
     "Id": 4,
-    "Category": "Root Beer",
-    "Name": "Brown Cow",
-    "Additions": [ "Coconut", "cream" ]
+    "Base": "Root Beer",
+    "Name": "Vanila Brew",
+    "Additions": [ "Vanila", "Cream" ]
   },
   {
     "Id": 5,
-    "Category": "Mtn Dew",
-    "Name": "Kinkin' Rickey",
-    "Additions": [ "Coconut", "Lime" ]
+    "Base": "Mtn Dew",
+    "Name": "Kikin' Rickey",
+    "Additions": [ "Grape", "Lime" ]
   },
   {
     "Id": 6,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Maui Breeze",
     "Additions": [ "Coconut", "Peach" ]
   },
   {
     "Id": 7,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Tropical Chaos",
     "Additions": [ "Kiwi", "Strawberry" ]
   },
   {
     "Id": 8,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "The Charmer",
     "Additions": [ "Mango", "Peach", "Pineapple", "Blue Curacoa" ]
   },
   {
     "Id": 9,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Perky Turkey",
     "Additions": [ "Kiwi", "Pineapple", "Lime" ]
   },
   {
     "Id": 10,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Dark Moon",
     "Additions": [ "Huckleberry", "Clue Curacoa", "Energy Shot" ]
   },
   {
     "Id": 11,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Jazzy Jewel",
     "Additions": [ "Blue Coconut", "Blue Raspberry", "Lime" ]
   },
   {
     "Id": 12,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Dawn on Me",
     "Additions": [ "Peach", "Strawberry" ]
   },
   {
     "Id": 13,
-    "Category": "Mtn Dew",
+    "Base": "Mtn Dew",
     "Name": "Key Lime Cutie",
     "Additions": [ "Kiwi", "Lime", "Cream", "Graham Cracker" ]
+  },
+  {
+    "Id": 14,
+    "Base": "Water",
+    "Name": "Detox Water",
+    "Additions": [ "Cucumber", "Mint", "Lemon", "Lime" ]
+  },
+  {
+    "Id": 15,
+    "Base": "Water",
+    "Name": "Spa Water",
+    "Additions": [ "Lemon", "Lime" ]
+  },
+  {
+    "Id": 16,
+    "Base": "Water",
+    "Name": "No Regret",
+    "Additions": [ "Energy Lemon (120 mg Caffeine)", "Sugar Free Peach" ]
+  },
+  {
+    "Id": 17,
+    "Base": "Water",
+    "Name": "Paradise Breeze",
+    "Additions": [ "Sugar Free Coconut", "Lemon" ]
+  },
+  {
+    "Id": 18,
+    "Base": "Water",
+    "Name": "Sour Grape",
+    "Additions": [ "Energy Lemon (120 mg Caffeine)", "Energy Grape (120 mg Caffeine)" ]
+  },
+  {
+    "Id": 19,
+    "Base": "Water",
+    "Name": "Feel'n Great",
+    "Additions": [ "Sugar Free Black Cherry", "Lime" ]
+  },
+  {
+    "Id": 20,
+    "Base": "Pepsi",
+    "Name": "Wild Daisy",
+    "Additions": [ "Cocnut", "Blue Curacoa" ]
+  },
+  {
+    "Id": 21,
+    "Base": "Pepsi",
+    "Name": "Pep'n Your Step",
+    "Additions": [ "Fresh Cherries", "Lemon" ]
+  },
+  {
+    "Id": 22,
+    "Base": "Pepsi",
+    "Name": "Whoopsi",
+    "Additions": [ "Cranberry", "Lime" ]
+  },
+  {
+    "Id": 23,
+    "Base": "Lemonade",
+    "Name": "Lemon Berry",
+    "Additions": [ "Lemon", "Rasberry or Strawberry" ]
+  },
+  {
+    "Id": 24,
+    "Base": "Lemonade",
+    "Name": "Lemon Cream",
+    "Additions": [ "Lemon", "Cream" ]
+  },
+  {
+    "Id": 25,
+    "Base": "Lemonade",
+    "Name": "Tilted Tulip",
+    "Additions": [ "Vanilla", "Graham Crackers", "Cream" ]
+  },
+  {
+    "Id": 26,
+    "Base": "Lemonade",
+    "Name": "Pearly Perfect",
+    "Additions": [ "Lemonade", "Sprite", "Pear", "Mint" ]
+  },
+  {
+    "Id": 27,
+    "Base": "Lemonade",
+    "Name": "Huckleberry Hailey",
+    "Additions": [ "Lemonade", "Sprite", "Huckleberry", "Lemon" ]
+  },
+  {
+    "Id": 28,
+    "Base": "Dr. Perrer",
+    "Name": "Sweetie",
+    "Additions": [ "Vanilla" ]
+  },
+  {
+    "Id": 29,
+    "Base": "Dr. Perrer",
+    "Name": "Dr. Raz",
+    "Additions": [ "Coconut", "Raspberry", "Cream" ]
+  },
+  {
+    "Id": 30,
+    "Base": "Dr. Perrer",
+    "Name": "3D",
+    "Additions": [ "Diet Dr. Pepper", "Coconut" ]
+  },
+  {
+    "Id": 31,
+    "Base": "Fanta",
+    "Name": "Sip-It Sunset",
+    "Additions": [ "Cream" ]
+  },
+  {
+    "Id": 32,
+    "Base": "Fanta",
+    "Name": "Frutti-Tutti",
+    "Additions": [ "Mango", "Pineapple", "Raspberry" ]
+  },
+  {
+    "Id": 33,
+    "Base": "Rootbeer",
+    "Name": "Brown Cow",
+    "Additions": [ "Cream" ]
+  },
+  {
+    "Id": 34,
+    "Base": "Rootbeer",
+    "Name": "Red Cow",
+    "Additions": [ "Red Cream Soda", "Cream" ]
+  },
+  {
+    "Id": 35,
+    "Base": "Powerade",
+    "Name": "The Champion",
+    "Additions": [ "Guava", "Blue Curacoa", "Fresh Orange" ]
+  },
+  {
+    "Id": 36,
+    "Base": "Powerade",
+    "Name": "Blue Lagoon",
+    "Additions": [ "Blue Coconut", "Cream" ]
+  },
+  {
+    "Id": 36,
+    "Base": "Powerade",
+    "Name": "Power Up",
+    "Additions": [ "Mtn Dew", "Blue Curacoa", "Fresh Orange", "Energy Shot" ]
+  },
+  {
+    "Id": 37,
+    "Base": "Monster Energy",
+    "Name": "Hiped Up Peach",
+    "Additions": [ "Mango Loco", "Mtn. Dew", "Peach Puree", "Lime", "Cream" ]
+  },
+  {
+    "Id": 38,
+    "Base": "Monster Energy",
+    "Name": "Electric Shock",
+    "Additions": [ "Green Monster", "Mtn. Dew", "Green Apple", "Cream" ]
+  },
+  {
+    "Id": 39,
+    "Base": "Monster Energy",
+    "Name": "Berry Blast",
+    "Additions": [ "White Monster", "Mtn. Dew", "Strawberry", "Cream" ]
+  },
+  {
+    "Id": 40,
+    "Base": "Monster Energy",
+    "Name": "Khaos",
+    "Additions": [ "Orange Monster", "Mtn. Dew", "Blackberry", "Coconut", "Cream" ]
+  },
+  {
+    "Id": 41,
+    "Base": "Monster Energy",
+    "Name": "Sour Punch",
+    "Additions": [ "Red Monster", "Mtn. Dew", "Kiwi", "Grapefruit", "Lime", "Cream" ]
+  },
+  {
+    "Id": 42,
+    "Base": "Sprite",
+    "Name": "Cherry Bomb",
+    "Additions": [ "Cherry", "Fresh Cherries", "Lime" ]
+  },
+  {
+    "Id": 43,
+    "Base": "Sprite",
+    "Name": "The Vic",
+    "Additions": [ "Strawberry", "Lime" ]
+  },
+  {
+    "Id": 43,
+    "Base": "Sprite",
+    "Name": "Pink Lady",
+    "Additions": [ "Pomegranate", "Lavender", "Grapefruit" ]
+  },
+  {
+    "Id": 44,
+    "Base": "Sprite",
+    "Name": "Sip A Colada",
+    "Additions": [ "Coconut", "Pineapple", "Cream" ]
+  },
+  {
+    "Id": 45,
+    "Base": "Sprite",
+    "Name": "P.O.G.",
+    "Additions": [ "Passion Fruit", "Blood Orange", "Guava", "Fresh Orange" ]
+  },
+  {
+    "Id": 46,
+    "Base": "Sprite",
+    "Name": "Utah Juice",
+    "Additions": [ "Watermelon" ]
+  },
+  {
+    "Id": 47,
+    "Base": "Sprite",
+    "Name": "Strawberry Fizz",
+    "Additions": [ "Strawberry" ]
+  },
+  {
+    "Id": 48,
+    "Base": "Sprite",
+    "Name": "Lime Ricky",
+    "Additions": [ "Grape", "Lime" ]
+  },
+  {
+    "Id": 49,
+    "Base": "Sprite",
+    "Name": "Dreamsicle",
+    "Additions": [ "Orange", "Vanilla" ]
+  },
+  {
+    "Id": 50,
+    "Base": "Sprite",
+    "Name": "Minty Melon",
+    "Additions": [ "Watermelon", "Mint" ]
+  },
+  {
+    "Id": 51,
+    "Base": "Sprite",
+    "Name": "Badger Blast",
+    "Additions": [ "Mango", "Lime" ]
+  },
+  {
+    "Id": 52,
+    "Base": "Sprite",
+    "Name": "Maybe Mojito",
+    "Additions": [ "Caconut", "Mint", "Lime" ]
+  },
+  {
+    "Id": 53,
+    "Base": "Sprite",
+    "Name": "Templar Pride",
+    "Additions": [ "Blackberry", "Lime" ]
+  },
+  {
+    "Id": 54,
+    "Base": "Sprite",
+    "Name": "The Hawk",
+    "Additions": [ "Pomegranate", "Coconut", "Mint" ]
+  },
+  {
+    "Id": 55,
+    "Base": "Sprite",
+    "Name": "Dragons Blood",
+    "Additions": [ "Blue Coconut", "Strawberry" ]
+  },
+  {
+    "Id": 56,
+    "Base": "Sprite",
+    "Name": "Cutie",
+    "Additions": [ "Passion Fruit", "Grapefruit", "Lime" ]
+  },
+  {
+    "Id": 57,
+    "Base": "Coca-Cola",
+    "Name": "Skinny Mini",
+    "Additions": [ "Diet Coke", "Cherry", "Fresh Cherries" ]
+  },
+  {
+    "Id": 58,
+    "Base": "Coca-Cola",
+    "Name": "Hot Mama",
+    "Additions": [ "Diet Coke", "Cherry", "Fresh Cherries", "Lemon" ]
+  },
+  {
+    "Id": 59,
+    "Base": "Coca-Cola",
+    "Name": "Cinn-A-Bear",
+    "Additions": [ "Coke", "Red Hot Candies" ]
+  },
+  {
+    "Id": 60,
+    "Base": "Coca-Cola",
+    "Name": "Salt 'N Pepper",
+    "Additions": [ "Diet Coke", "Coconut", "Lime" ]
+  },
+  {
+    "Id": 61,
+    "Base": "Hot Drink",
+    "Name": "French Kiss",
+    "Additions": [ "1/2 Coffee", "1/2 Hot Cocoa", "Cream" ]
+  },
+  {
+    "Id": 62,
+    "Base": "Hot Drink",
+    "Name": "Liquid S'more",
+    "Additions": [ "Hot Cocoa", "Toasted Marshmallow", "Graham Crackers" ]
+  },
+  {
+    "Id": 62,
+    "Base": "Hot Drink",
+    "Name": "Almond Joy",
+    "Additions": [ "Hot Cocoa", "Almond", "Coconut" ]
+  },
+  {
+    "Id": 63,
+    "Base": "Hot Drink",
+    "Name": "C-Raz",
+    "Additions": [ "Hot Cocoa", "Raspberry" ]
+  },
+  {
+    "Id": 64,
+    "Base": "Hot Drink",
+    "Name": "Creme Brulee",
+    "Additions": [ "Hot Cocoa", "Caramel" ]
+  },
+  {
+    "Id": 65,
+    "Base": "Hot Drink",
+    "Name": "PB & C",
+    "Additions": [ "Hot Cocoa", "Peanut Butter" ]
+  },
+  {
+    "Id": 66,
+    "Base": "Hot Drink",
+    "Name": "Red Hot",
+    "Additions": [ "Spiced Wassail", "Red Hots" ]
+  },
+  {
+    "Id": 67,
+    "Base": "Hot Drink",
+    "Name": "Apple Bobber",
+    "Additions": [ "Apple Cider", "Caramel" ]
+  },
+  {
+    "Id": 68,
+    "Base": "Hot Drink",
+    "Name": "Molly Mormon",
+    "Additions": [ "1/2 Pero", "1/2 Hot Cocoa", "Cream" ]
+  },
+  {
+    "Id": 69,
+    "Base": "Hot Drink",
+    "Name": "Sprinkle Whip",
+    "Additions": [ "Whip Cream", "Hot Cocoa", "Chocolate Sprinkles" ]
+  },
+  {
+    "Id": 70,
+    "Base": "Hot Drink",
+    "Name": "Candy Cane Cocoa",
+    "Additions": [ "Hot Cocoa", "Pepermint", "Candy Cane" ]
   }
 ]

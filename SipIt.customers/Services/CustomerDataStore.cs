@@ -32,20 +32,12 @@ namespace SipIt.customers.Services
             Customer customer1 = new Customer()
             {
                 Id = 1,
-                FirstName = "James",
-                LastName = "Jones",
-                Email = "james.jones@mail.com"
-            };
-            Customer customer2 = new Customer()
-            {
-                Id = 2,
-                FirstName = "Zachary",
-                LastName = "Reiss",
-                Email = "zachary.reiss@mail.com"
+                FirstName = "SeedCustomer",
+                LastName = "SeedCustomer",
+                Email = "Seed.Customer@mail.com"
             };
 
             customers.AddOrUpdate(customer1.Id, customer1, (_id, _existingCustomer) => customer1);
-            customers.AddOrUpdate(customer2.Id, customer2, (_id, _existing) => customer2);
             await serializeCustomersAsync(customers);
         }
 
