@@ -1,3 +1,1 @@
-﻿build:
-	Docker:
-		web: yarn workspace SipIt.customers start
+﻿web: yarn workspace SipIt.customers start
